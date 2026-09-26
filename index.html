@@ -2,134 +2,459 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Veer Rajput — personal profile, squad, gallery, resources and contact.">
-  <title>VEER RAJPUT — Official</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓 | Personal Identity</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="bg-grid"></div>
-  <header class="nav">
-    <a class="brand" href="#home">VR<span>.</span></a>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-small">INITIALIZING</div>
+    <div class="loader-name">𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓</div>
+    <div class="loader-percent" id="loaderPercent">000%</div>
+
+    <div class="loader-track">
+      <div class="loader-bar" id="loaderBar"></div>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">VR<span>.</span></a>
+
     <nav>
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#squad">Squad</a>
-      <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#squad">SQUAD</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#contact">CONTACT</a>
     </nav>
-    <a class="nav-btn" href="#contact">Connect</a>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section id="home" class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">✦ OFFICIAL PERSONAL SPACE</p>
-        <h1>VEER<br><span>RAJPUT</span></h1>
-        <p class="lead">One day, you will search for me, but I will only be a memory.</p>
-        <div class="actions">
-          <a class="btn primary" href="#about">Explore Profile <span>↗</span></a>
-          <a class="btn ghost" href="#squad">Meet The Squad</a>
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-content reveal">
+
+        <div class="identity-badge">
+          <span></span>
+          PERSONAL IDENTITY
         </div>
-        <div class="mini-socials">
-          <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Telegram">TG</a>
-          <a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="WhatsApp">WA</a>
+
+        <h1>
+          𝐕𝐄𝐄𝐑<br>
+          <span>𝐑𝐀𝐉𝐏𝐔𝐓</span>
+        </h1>
+
+        <p class="hero-role">
+          OWNER • CREATOR • DREAMER
+        </p>
+
+        <p class="hero-bio">
+          One day, you will search for me,
+          but I will only be a memory.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#squad" class="btn btn-red">
+            JOIN THE COMMUNITY
+          </a>
+
+          <a href="#contact" class="btn btn-dark">
+            CONTACT ME
+          </a>
         </div>
+
+        <div class="scroll-text">
+          SCROLL TO EXPLORE
+          <span>↓</span>
+        </div>
+
       </div>
-      <div class="hero-card reveal">
-        <div class="scan"></div>
+
+
+      <!-- PROFILE CARD -->
+      <div class="profile-card reveal">
+
+        <div class="card-top">
+          <span>ONLINE</span>
+          <span>01 / 01</span>
+        </div>
+
         <div class="avatar">
-  <img src="WA_1790418468244.jpeg" alt="Veer Rajput"
-       style="width:230px;height:230px;object-fit:cover;border-radius:50%;display:block;">
-</div>
-        <div class="card-meta"><span>ONLINE</span><b>01 / 01</b></div>
-        <div class="card-name">𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓</div>
-        <div class="card-role">OWNER • CREATOR • DREAMER</div>
-      </div>
-    </section>
-
-    <section id="about" class="section split">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="content reveal">
-        <p class="eyebrow">WHO I AM</p>
-        <h2>Not just a profile.<br><em>It's an identity.</em></h2>
-        <p class="muted">Welcome to my official corner of the internet. This space brings together my profile, people, projects, favourite resources and a private side reserved for the right people.</p>
-        <div class="stats">
-          <div><strong>24/7</strong><span>ONLINE VIBE</span></div>
-          <div><strong>∞</strong><span>BIG IDEAS</span></div>
-          <div><strong>01</strong><span>ORIGINAL</span></div>
+          <img src="WA_1790418468244.jpeg" alt="Veer Rajput">
         </div>
+
+        <div class="card-line"></div>
+
+        <h2>𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓</h2>
+
+        <p>PERSONAL PROFILE</p>
+
+        <div class="card-bottom">
+          <span>VR</span>
+          <span>IDENTITY</span>
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div>
+        𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓
+        <span>✦</span>
+        PERSONAL IDENTITY
+        <span>✦</span>
+        OWNER • CREATOR
+        <span>✦</span>
+        DREAM BIG
+        <span>✦</span>
+        𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓
+        <span>✦</span>
+      </div>
+    </div>
+
+
+    <!-- ABOUT / FOUNDER -->
+    <section id="about" class="section">
+
+      <div class="section-heading reveal">
+        <span>01 / ABOUT</span>
+        <h2>THE PERSON<br><em>BEHIND THE NAME.</em></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-card reveal">
+          <div class="number">01</div>
+          <h3>FOUNDER & OWNER</h3>
+          <p>
+            Building my own identity, community and digital world
+            one idea at a time.
+          </p>
+        </div>
+
+        <div class="about-card featured reveal">
+          <div class="quote-mark">“</div>
+
+          <p>
+            I don't chase attention.
+            I build something worth remembering.
+          </p>
+
+          <div class="quote-author">
+            — VEER RAJPUT
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="number">03</div>
+          <h3>MY MINDSET</h3>
+          <p>
+            Stay focused. Keep learning. Create your own path.
+            Let the work speak.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
     <section id="skills" class="section">
-      <div class="section-label">02 / SKILLS</div>
-      <div class="content">
-        <p class="eyebrow">WHAT I DO</p><h2 class="reveal">Skills & <em>interests</em></h2>
-        <div class="skill-grid">
-          <article class="tile reveal"><span>01</span><h3>Web & Design</h3><p>Modern layouts, visual identity and digital experiences.</p></article>
-          <article class="tile reveal"><span>02</span><h3>Automation</h3><p>Tools, bots and workflows that save time.</p></article>
-          <article class="tile reveal"><span>03</span><h3>Content</h3><p>Creative profiles, graphics and social presence.</p></article>
-          <article class="tile reveal"><span>04</span><h3>Community</h3><p>Building a strong and trusted digital squad.</p></article>
-        </div>
+
+      <div class="section-heading reveal">
+        <span>02 / SKILLS</span>
+        <h2>WHAT I<br><em>CREATE.</em></h2>
       </div>
+
+      <div class="skills-grid">
+
+        <div class="skill reveal">
+          <span>01</span>
+          <h3>WEB DESIGN</h3>
+          <p>Modern interfaces, personal websites and digital identities.</p>
+        </div>
+
+        <div class="skill reveal">
+          <span>02</span>
+          <h3>CREATIVE IDEAS</h3>
+          <p>Turning simple ideas into unique visual experiences.</p>
+        </div>
+
+        <div class="skill reveal">
+          <span>03</span>
+          <h3>COMMUNITY</h3>
+          <p>Building strong connections and meaningful communities.</p>
+        </div>
+
+        <div class="skill reveal">
+          <span>04</span>
+          <h3>DIGITAL WORLD</h3>
+          <p>Exploring technology, websites and creative projects.</p>
+        </div>
+
+      </div>
+
     </section>
 
-    <section class="quote section">
-      <div class="quote-mark">“</div>
-      <blockquote>“Stay original. Let the work speak louder than the noise.”</blockquote>
-      <p>— VEER RAJPUT</p>
+
+    <!-- QUOTES -->
+    <section class="quote-section">
+
+      <div class="big-quote reveal">
+        <span>WORDS I LIVE BY</span>
+
+        <h2>
+          “Don't explain yourself.<br>
+          <em>Let your actions introduce you.</em>”
+        </h2>
+
+        <p>— VEER</p>
+      </div>
+
     </section>
 
+
+    <!-- POETRY -->
+    <section class="section poetry-section">
+
+      <div class="section-heading reveal">
+        <span>03 / MY WORDS</span>
+        <h2>IN MY<br><em>OWN WORDS.</em></h2>
+      </div>
+
+      <div class="poetry-card reveal">
+
+        <div class="poetry-label">
+          PERSONAL NOTE
+        </div>
+
+        <p>
+          Kabhi kabhi khamoshi hi sabse zyada keh jaati hai,
+          jo baat lafzon mein nahi hoti,
+          woh aankhon mein nazar aa jaati hai.
+        </p>
+
+        <p>
+          Safar lamba hai,
+          magar manzil apni hogi.
+        </p>
+
+        <span>— VEER RAJPUT</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- SQUAD -->
     <section id="squad" class="section">
-      <div class="section-label">03 / SQUAD</div>
-      <div class="content">
-        <p class="eyebrow">THE INNER CIRCLE</p><h2 class="reveal">My <em>squad</em></h2>
-        <div class="squad-grid">
-          <article class="person reveal"><div class="person-pic">01</div><h3>YOUR NAME</h3><p>CORE MEMBER</p></article>
-          <article class="person reveal"><div class="person-pic">02</div><h3>YOUR NAME</h3><p>CORE MEMBER</p></article>
-          <article class="person reveal"><div class="person-pic">03</div><h3>YOUR NAME</h3><p>CORE MEMBER</p></article>
-          <article class="person reveal"><div class="person-pic">04</div><h3>YOUR NAME</h3><p>CORE MEMBER</p></article>
-        </div>
+
+      <div class="section-heading reveal">
+        <span>04 / COMMUNITY</span>
+        <h2>THE<br><em>SQUAD.</em></h2>
       </div>
+
+      <div class="squad-grid">
+
+        <div class="squad-card reveal">
+          <div class="squad-avatar">VR</div>
+          <div>
+            <h3>VEER</h3>
+            <p>OWNER</p>
+          </div>
+        </div>
+
+        <div class="squad-card reveal">
+          <div class="squad-avatar">01</div>
+          <div>
+            <h3>YOUR NAME</h3>
+            <p>MEMBER</p>
+          </div>
+        </div>
+
+        <div class="squad-card reveal">
+          <div class="squad-avatar">02</div>
+          <div>
+            <h3>YOUR NAME</h3>
+            <p>MEMBER</p>
+          </div>
+        </div>
+
+        <div class="squad-card reveal">
+          <div class="squad-avatar">03</div>
+          <div>
+            <h3>YOUR NAME</h3>
+            <p>MEMBER</p>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
+
+    <!-- GALLERY -->
     <section id="gallery" class="section">
-      <div class="section-label">04 / GALLERY</div>
-      <div class="content">
-        <p class="eyebrow">VISUAL DIARY</p><h2 class="reveal">Selected <em>moments</em></h2>
-        <div class="gallery">
-          <div class="photo big">ADD PHOTO 01</div><div class="photo">ADD PHOTO 02</div>
-          <div class="photo">ADD PHOTO 03</div><div class="photo wide">ADD PHOTO 04</div>
-        </div>
-        <p class="private-note">🔒 Private gallery can be connected to a password-protected page later.</p>
+
+      <div class="section-heading reveal">
+        <span>05 / SHOWCASE</span>
+        <h2>PROFILE<br><em>SHOWCASE.</em></h2>
       </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item large reveal">
+          <img src="WA_1790418468244.jpeg" alt="Veer Rajput">
+          <div class="gallery-overlay">
+            <span>01</span>
+            <h3>MY IDENTITY</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="placeholder">
+            <span>VR</span>
+          </div>
+          <div class="gallery-overlay">
+            <span>02</span>
+            <h3>COMING SOON</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="placeholder">
+            <span>VR</span>
+          </div>
+          <div class="gallery-overlay">
+            <span>03</span>
+            <h3>COMING SOON</h3>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="resources" class="section">
-      <div class="section-label">05 / RESOURCES</div>
-      <div class="content">
-        <p class="eyebrow">MY TOOLKIT</p><h2 class="reveal">Tools & <em>links</em></h2>
-        <div class="links">
-          <a href="#"><span>↗</span><div><b>My Website</b><small>Official home</small></div></a>
-          <a href="#"><span>↗</span><div><b>Social Hub</b><small>All social profiles</small></div></a>
-          <a href="#"><span>↗</span><div><b>Projects</b><small>Things I'm building</small></div></a>
-        </div>
+
+    <!-- RESOURCES -->
+    <section class="section">
+
+      <div class="section-heading reveal">
+        <span>06 / RESOURCES</span>
+        <h2>MY DIGITAL<br><em>SPACE.</em></h2>
       </div>
+
+      <div class="resources-grid">
+
+        <a href="#" class="resource reveal">
+          <span>01</span>
+          <div>
+            <h3>WEBSITE</h3>
+            <p>My personal digital space.</p>
+          </div>
+          <b>↗</b>
+        </a>
+
+        <a href="#" class="resource reveal">
+          <span>02</span>
+          <div>
+            <h3>COMMUNITY</h3>
+            <p>Connect with the squad.</p>
+          </div>
+          <b>↗</b>
+        </a>
+
+        <a href="#" class="resource reveal">
+          <span>03</span>
+          <div>
+            <h3>PROJECTS</h3>
+            <p>Things I am building.</p>
+          </div>
+          <b>↗</b>
+        </a>
+
+      </div>
+
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="section-label">06 / CONTACT</div>
-      <div class="content reveal">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Have something<br><em>to say?</em></h2>
-        <a class="mail" href="mailto:hello@veerrajput6.github.io">hello@veerrajput6.github.io <span>↗</span></a>
-        <div class="footer-socials"><a href="#">Instagram</a><a href="#">Telegram</a><a href="#">YouTube</a><a href="#">WhatsApp</a></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+      <div class="contact-inner reveal">
+
+        <span>07 / GET IN TOUCH</span>
+
+        <h2>
+          LET'S CREATE<br>
+          <em>SOMETHING.</em>
+        </h2>
+
+        <p>
+          Have an idea, project or just want to connect?
+          Drop me a message.
+        </p>
+
+        <a href="mailto:your@email.com" class="btn btn-red">
+          CONTACT ME ↗
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
-  <footer><span>© 2026 VEER RAJPUT</span><span>BUILT WITH PURPOSE.</span></footer>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-top">
+
+      <div>
+        <div class="footer-logo">𝐕𝐄𝐄𝐑 𝐑𝐀𝐉𝐏𝐔𝐓</div>
+        <p>PERSONAL IDENTITY • 2026</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#squad">SQUAD</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VEER RAJPUT</span>
+      <span>BUILT WITH PASSION</span>
+    </div>
+
+  </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
