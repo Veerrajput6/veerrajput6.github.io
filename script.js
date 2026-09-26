@@ -9,7 +9,6 @@ const loaderBar = document.getElementById("loaderBar");
 let progress = 0;
 
 const loading = setInterval(() => {
-
   progress += 2;
 
   if (progress >= 100) {
@@ -30,31 +29,23 @@ const loading = setInterval(() => {
 }, 25);
 
 
-/* ================= SCROLL ANIMATION ================= */
-
 const observer = new IntersectionObserver(
-  (entries) => {
-
-    entries.forEach((entry) => {
-
+  entries => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       }
-
     });
-
   },
   {
     threshold: 0.12
   }
 );
 
-document.querySelectorAll(".reveal").forEach((element) => {
-  observer.observe(element);
+document.querySelectorAll(".reveal").forEach(el => {
+  observer.observe(el);
 });
 
-
-/* ================= ACTIVE NAV ================= */
 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".navbar nav a");
@@ -63,22 +54,18 @@ window.addEventListener("scroll", () => {
 
   let current = "";
 
-  sections.forEach((section) => {
-
-    const sectionTop = section.offsetTop - 200;
-
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute("id");
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 200) {
+      current = section.id;
     }
-
   });
 
-  navLinks.forEach((link) => {
-
-    link.style.color = "";
+  navLinks.forEach(link => {
 
     if (link.getAttribute("href") === "#" + current) {
       link.style.color = "#e51d3e";
+    } else {
+      link.style.color = "";
     }
 
   });
