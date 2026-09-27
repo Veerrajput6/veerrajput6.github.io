@@ -403,7 +403,7 @@ display:block;
 ========================= */
 
 .profile-image-wrap{
-  overflow:hidden;
+  overflow:visible;
 }
 
 .profile-image-wrap::before,
