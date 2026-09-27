@@ -86,7 +86,67 @@ height:100%;
 background:var(--red);
 box-shadow:0 0 20px var(--red);
 }
+/* =========================
+   LOADER PROFILE
+========================= */
 
+.loader-profile{
+  width:130px;
+  height:130px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:28px;
+}
+
+.loader-profile img{
+  width:105px;
+  height:105px;
+  object-fit:cover;
+  border-radius:50%;
+  position:relative;
+  z-index:2;
+  border:2px solid #1c1c1c;
+  box-shadow:
+    0 0 25px rgba(229,29,62,.35),
+    0 0 60px rgba(229,29,62,.12);
+}
+
+.loader-ring{
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  border:2px solid transparent;
+  border-top-color:var(--red);
+  border-right-color:var(--red);
+  box-shadow:
+    0 0 10px var(--red),
+    0 0 25px rgba(229,29,62,.7);
+  animation:loaderRing 1.5s linear infinite;
+  z-index:3;
+}
+
+.loader-ring::after{
+  content:"";
+  position:absolute;
+  inset:7px;
+  border-radius:50%;
+  border:1px solid rgba(229,29,62,.35);
+  animation:loaderRingReverse 2s linear infinite;
+}
+
+@keyframes loaderRing{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes loaderRingReverse{
+  to{
+    transform:rotate(-360deg);
+  }
+}
 .nav{
 position:fixed;
 top:0;
